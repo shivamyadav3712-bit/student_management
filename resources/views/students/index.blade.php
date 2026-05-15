@@ -39,6 +39,23 @@
         </button>
     </form>
 </div>
+                         <!--For Search Bar-->
+
+             <div class="card-header">
+    <form action="{{ route('students.index') }}" method="GET" class="flex gap-2 max-w-xs">
+        
+        <input type="text" 
+               name="search" 
+               value="{{ request('search') }}"
+               placeholder="Search..."
+               class="w-full border rounded px-3 py-1 text-sm">
+
+        <button class="card-header bg-blue-600 text-white px-3 py-1 rounded text-sm">
+            Search
+        </button>
+
+    </form>
+</div>
         
         <div class="card-body">
             <!-- Success Message -->
@@ -96,6 +113,8 @@
         </div>
     </div>
 </div>
+
+
 
 <!-- Bootstrap Bundle JS (needed for alert dismissal) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

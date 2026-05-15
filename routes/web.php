@@ -32,6 +32,7 @@ Route::middleware('auth')->group(function () {
 
     // 2. Standard Student Routes
     Route::resource('students', StudentController::class);
+    
 
     // Profile Routes
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
